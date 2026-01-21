@@ -39,11 +39,18 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    /* z-index: 100; */
     background-color: var(--color-white);
     box-sizing: border-box;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
 }
+
+.site-header.site-header--open {
+    box-shadow: none; 
+}
+
 .site-header__container {
     display: flex;
     align-items: center;
@@ -60,8 +67,6 @@ body {
     margin: 0 0 0 10px;
     font-size: 14px;
     color: var(--color-gray-600);
-}
-.site-header__nav {
 }
 
 .site-header__nav--active {
@@ -111,11 +116,11 @@ body {
 .site-header__hidden-box {
     position: absolute;
     display: none;
-    top: 80px;
+    top: 81px;
     left: 0;
     right: 0;
     width: 100vw;
-    height: 268px;
+    height: 250px;
     background-color: var(--color-white);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
@@ -163,9 +168,9 @@ body {
     }
 
     .nav__link {
-        margin: 8px !important; /* Убираем боковые отступы, ставим вертикальные */
+        margin: 8px; /* Убираем боковые отступы, ставим вертикальные */
         color: var(--color-black); /* Цвет ссылок на синем фоне */
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .site-header__toggler {
@@ -176,7 +181,7 @@ body {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     .site-header__contact {
         display: none;
     }

@@ -1,10 +1,3 @@
-// const btnToggler = document.querySelector('.site-header__toggler');
-
-
-// btnToggler.addEventListener('click', () => {
-    //     box.classList.toggle('site-header__hidden-box--active');
-    // })
-    
 const btnToggler = document.querySelector('.site-header__toggler');
 const header = document.querySelector('.site-header');
 const box = document.querySelector('.site-header__hidden-box');
